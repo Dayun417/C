@@ -11,6 +11,8 @@ int main() {
         else if(i>10) {
             if((i%10)%3==0 || (i/10)%3==0) {
                 printf("0 ");
+            } else {
+                printf("%d ", i);
             }
         }
         else {

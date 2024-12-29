@@ -9,7 +9,8 @@ int main() {
             n /= i;
             cnt++;
         }
-        if (n / i <= 1) {
+        else if (n / i <= 1) {
+            cnt++;
             break;
         }
     }

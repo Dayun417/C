@@ -15,6 +15,7 @@ int main() {
         } else if(n==4) {
             printf("Sam\n");
         } else {
+            printf("Vacancy");
             break;
         }
     }

@@ -12,9 +12,8 @@ int main() {
         if (n / i <= 1) {
             break;
         }
-        cnt++;
     }
-
+    cnt++;
     printf("%d", cnt);
 
     return 0;

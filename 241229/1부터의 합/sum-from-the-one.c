@@ -6,12 +6,12 @@ int main() {
 
     for (i = 1; i <= 100; i++) {
         sum += i;
-        if (sum > i) {
+        if (sum >= n) {
             break;
         }
     }
 
-    printf("%d", sum);
+    printf("%d", i);
 
     return 0;
 }

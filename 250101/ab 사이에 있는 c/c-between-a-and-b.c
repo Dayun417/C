@@ -10,12 +10,13 @@ int main() {
         if(i%c==0) {
             satisfied = true;
         }
-        if(satisfied==true) {
+    }
+
+    if(satisfied==true) {
             printf("YES\n");
         } else {
             printf("NO\n");
         }
-    }
 
     return 0;
 }

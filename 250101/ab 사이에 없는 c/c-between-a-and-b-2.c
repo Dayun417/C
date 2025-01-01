@@ -8,14 +8,14 @@ int main() {
     scanf("%d %d %d", &a, &b, &c);
 
     for(int i=a;i<=b;i++) {
-        if(i%c!==0) {
+        if(i%c==0) {
             satified = false;
         }
     }
     if(satified==false) {
-        printf("YES\n");
-    } else {
         printf("NO\n");
+    } else {
+        printf("YES\n");
     }
 
     return 0;

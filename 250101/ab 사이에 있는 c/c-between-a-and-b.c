@@ -7,7 +7,7 @@ int main() {
     scanf("%d %d %d", &a, &b, &c);
 
     for(int i=a;i<=b;i++) {
-        if(i%7==0) {
+        if(i%c==0) {
             satisfied = true;
         }
         if(satisfied==true) {

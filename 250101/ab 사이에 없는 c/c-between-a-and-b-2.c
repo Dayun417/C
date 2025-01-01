@@ -12,10 +12,10 @@ int main() {
             satified = false;
         }
     }
-    if(satified==false) {
-        printf("YES\n");
-    } else {
+    if(satified==true) {
         printf("NO\n");
+    } else {
+        printf("YES\n");
     }
 
     return 0;

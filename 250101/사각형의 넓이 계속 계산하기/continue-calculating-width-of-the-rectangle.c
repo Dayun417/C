@@ -1,16 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, result=a*b;
+    int a, b;
     char c;
 
-    while(1) {
+    while (1) {
         scanf("%d %d %c", &a, &b, &c);
-        if(c==0) {
-            printf("%d", result);
+        int result = a * b;
+        
+        if (c == 'C') {
+            printf("%d\n", result);
             break;
-        } else {
-            printf("%d", result);
+        }
+        else {
+            printf("%d\n", result);
         }
     }
 

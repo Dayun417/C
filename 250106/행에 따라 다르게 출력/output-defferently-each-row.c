@@ -1,25 +1,20 @@
 #include <stdio.h>
 
 int main() {
-    int n, cnt=1;
+    int n, cnt = 0;
     scanf("%d", &n);
 
-    for(int i=0;i<n;i++) {
-        if(i%2==0) {
-            for(int j=0;j<n;j++) {
-                printf("%d ", cnt);
+	for(int i = 0; i < n; i++) {
+		for(int j = 0; j < n; j++) {
+			if(i % 2 == 0)
                 cnt++;
-            }
-            cnt+=2;
-        } else {
-            for(int j=0;j<n;j++) {
-                printf("%d ", cnt);
-                cnt+=2;
-            }
-        }
-        printf("\n");
-        cnt--;
-    }
+            else
+                cnt += 2;
+            
+            printf("%d ", cnt);
+		}
+		printf("\n");
+	}
 
     return 0;
 }

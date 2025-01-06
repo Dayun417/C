@@ -11,9 +11,9 @@ int main() {
         for (int j = 0; j < n - i; j++) {
             printf("%d ", cnt);
             cnt++;
-        }
-        if(cnt==10) {
-            cnt=1;
+            if(cnt==10) {
+                cnt=1;
+            }
         }
         printf("\n");
     }

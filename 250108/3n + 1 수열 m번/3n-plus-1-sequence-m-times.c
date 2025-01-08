@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int a, save, cnt=0;
+    int a;
     scanf("%d", &a);
 
     for (int i = 0; i < a; i++) {
         int n;
 		scanf("%d", &n);
+        int cnt=0;
         
         while(n!=1) { 		
             if(n%2==0) {
@@ -17,9 +18,8 @@ int main() {
                 cnt++;
             }
         }
+        printf("%d\n", cnt);
 	}
-
-    printf("%d", cnt);
 
     return 0;
 }

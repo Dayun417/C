@@ -11,7 +11,7 @@ int main() {
         cnt++;
     }
     avg = sum/cnt;
-    printf("%.1lf", avg);
+    printf("%.1lf\n", avg);
 
     if(avg>=4.0) {
         printf("Perfect");

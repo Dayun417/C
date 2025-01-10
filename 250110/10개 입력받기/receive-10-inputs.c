@@ -16,7 +16,7 @@ int main() {
             cnt++;
         }
     }
-    avg = sum / cnt;
+    avg = (double)sum / cnt;
     printf("%d %.1lf", sum, avg);
 
     return 0;

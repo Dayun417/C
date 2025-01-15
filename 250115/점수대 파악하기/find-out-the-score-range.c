@@ -9,9 +9,7 @@ int main() {
         if(arr[i]==0) {
             break;
         }
-        if(arr[i]<10) {
-            continue;
-        }
+
         cnt[arr[i]/10]++;
     }
 

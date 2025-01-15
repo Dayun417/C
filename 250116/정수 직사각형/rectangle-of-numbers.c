@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int arr[3][5]={0,};
+    int arr[3][5];
     int n, m;
     scanf("%d %d", &n, &m);
 

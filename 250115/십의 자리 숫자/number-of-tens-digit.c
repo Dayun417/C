@@ -1,23 +1,20 @@
 #include <stdio.h>
 
 int main() {
-    int arr[100], count=0;
-
-    for(int i=0;i<100;i++) {
-        scanf("%d ", &arr[i]);
-        if(arr[i]==0) {
-            break;
-        }
-        count++;
-    }
-
-    for(int i=1;i<10;i++) {
-        int cnt=0;
-        for(int j=0;j<count;j++) {
-            if((arr[j]/10)==i)
-                cnt++;
-        }
-        printf("%d - %d\n", i, cnt);
+	int count_arr[10] = {0,};
+	int arr[100];
+	
+	for(int i = 0; i < 100; i++) {
+		scanf("%d", &arr[i]);
+		if(arr[i] == 0)
+			break;
+		if(arr[i] < 10)
+			continue;
+		count_arr[arr[i] / 10]++;
+	}
+	
+    for(int i = 1; i <= 9; i++) {
+        printf("%d - %d\n", i, count_arr[i]);
     }
 
     return 0;

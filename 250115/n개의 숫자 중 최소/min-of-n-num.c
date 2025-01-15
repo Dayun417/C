@@ -13,9 +13,15 @@ int main() {
     for(int i=0;i<n;i++) {
         if(min>arr[i]) {
             min=arr[i];
+        }
+    }
+
+    for(int i=0;i<n;i++) {
+        if(min==arr[i]) {
             cnt++;
         }
     }
+
     printf("%d %d", min, cnt);
 
     return 0;

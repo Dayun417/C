@@ -3,7 +3,7 @@
 
 int main() {
     int n, arr[100], cnt=0;
-    int max=INT_MIN, max2=0, index;
+    int max=INT_MIN, max2=INT_MIN, index;
     scanf("%d", &n);
 
     for(int i=0;i<n;i++) {

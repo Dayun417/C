@@ -18,8 +18,8 @@ int main() {
         }
     }
 
-    arr[index]=0;
-    
+    arr[index]=INT_MIN;
+
     for(int i=0;i<cnt;i++) {
         if(arr[i]>max2) {
             max2=arr[i];
